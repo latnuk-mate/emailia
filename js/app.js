@@ -1,7 +1,7 @@
-import { EmailBody } from './js/emailbody.js';
-import {EmailCard} from './js/emailcard.js';
-import { getMailsFromDB } from './js/getMailsFromDb.js';
-import { formatDate } from './js/format.js';
+import { EmailBody } from './emailbody.js';
+import {EmailCard} from './emailcard.js';
+import { getMailsFromDB } from './getMailsFromDb.js';
+import { formatDate } from './format.js';
 
 
 var _countPage = 1;
