@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="An outlook like email client app.">
+<meta name="keywords" content="website, email, application, outlook">
+<meta name="author" content="latnuk-mate">
+<title>Emailia | An email client app</title>
+<!-- css library... -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- custom styles... -->
+ <link rel="stylesheet" href="app.css">
+
+ <!-- for icons -->
+<link rel="icon" href="public/mail.svg">
+
+<!-- script file -->
+ <script src="app.js" defer type="module"></script>
+</head>
+<body>
+
+    <!-- main container of the app -->
+    <div class="max-w-[1240px] app--container px-8 md:px-12 py-8 rounded-md m-auto mt-10">
+
+        <!-- filter section -->
+         <nav class="flex items-center justify-center md:justify-start gap-6 filter--section">
+            <h5 class="text text-lg">Filter By:</h5>
+            <ul class="text flex items-center gap-1">
+                <li class="cursor-pointer px-5 py-2 rounded-[100px] active" id="all_mails">All</li>
+                <li class="cursor-pointer px-5 py-2 rounded-[100px]" id="read_mails">Read</li>
+                <li class="cursor-pointer px-5 py-2 rounded-[100px]" id="fav_mails">Favorites</li>
+            </ul>
+         </nav> 
+
+         <!-- main container -->
+          <main class="mt-5 flex gap-2 justify-start">
+
+         <!-- left sidebar || email list -->
+          <section class="p-2 max-w-lg">
+            <div class="email--list">
+                <!-- render all emails here -->
+            </div>
+            <!-- pagination -->
+             <div class="flex items-center justify-end gap-5 mt-5 paginateBtn">
+                <button class="fav--btn px-5 py-2 rounded-md text-white prev_btn">Prev</button>
+                <button class="fav--btn px-5 py-2 rounded-md text-white next_btn">Next</button>
+             </div>
+          </section>
+
+          <section class="max-w-full p-5 bg-white h-fit mt-4 email--body">
+            <!-- design the body -->
+
+          </section>
+            
+          </main>
+
+    </div>
+
+</body>
+</html>
